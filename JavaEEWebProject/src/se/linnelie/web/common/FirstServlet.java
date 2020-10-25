@@ -1,5 +1,7 @@
 package se.linnelie.web.common;
 
-public class FirstServlet {
+import javax.servlet.http.HttpServlet;
+
+public class FirstServlet extends HttpServlet{
 
 }
