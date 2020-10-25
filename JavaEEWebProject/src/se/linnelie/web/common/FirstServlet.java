@@ -15,7 +15,7 @@ public class FirstServlet extends HttpServlet{
 		String firstName = req.getParameter("fname");
 		String lastName = req.getParameter("lname");
 		String fullName = firstName + " " + lastName;
-		resp.sendRedirect("http://www.google.com ");
+		resp.sendRedirect("test.html");
 		
 	}
 
