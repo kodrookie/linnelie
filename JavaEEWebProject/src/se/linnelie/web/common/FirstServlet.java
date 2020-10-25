@@ -16,6 +16,9 @@ public class FirstServlet extends HttpServlet{
 		String firstName = req.getParameter("fname");
 		String lastName = req.getParameter("lname");
 		String fullName = firstName + " " + lastName;
+		
+		req.setAttribute("name", fullName);
+		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/output.jsp");
 		dispatcher.forward(req, resp);
 	}
