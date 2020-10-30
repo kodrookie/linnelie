@@ -7,7 +7,10 @@
 <title>JSP-sida test</title>
 </head>
 <body>
-	<h1>Detta är output</h1>
-	<h4><%= request.getAttribute("name") %></h4>
+	<h1>Detta är output. Kanske Linns sida!</h1>
+	<h3>Hej! Jag heter <%
+		String fullName = request.getAttribute("name").toString();
+		out.println(fullName);
+	%><h3>
 </body>
 </html>

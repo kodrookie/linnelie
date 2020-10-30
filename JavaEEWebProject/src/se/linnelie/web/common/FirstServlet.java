@@ -17,6 +17,8 @@ public class FirstServlet extends HttpServlet{
 		String lastName = req.getParameter("lname");
 		String fullName = firstName + " " + lastName;
 		
+		//name = en sträng (en key, men unikt namn), fullName är ett objekt
+		//Detta objekt vill vi sedan accessa i jsp-filen där det ska skrivas ut
 		req.setAttribute("name", fullName);
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/output.jsp");
